@@ -1,0 +1,38 @@
+html, body {
+  background-color: rgb(34, 34, 34);
+  width: 400px;
+  max-height: 800px;
+  margin: 5px;
+}
+
+.list-container {
+  color: whitesmoke;
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+}
+
+.title {
+  color: whitesmoke;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  width: 100%;
+}
+
+a {
+  color: whitesmoke;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+a:hover {
+  color: rgb(177, 177, 177);
+}
+
+li{
+  padding: 4px;
+}
+
+.NYT_API {
+  height: 40px;
+  width: 200px;
+}
