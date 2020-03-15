@@ -53,8 +53,22 @@ a:hover {
   width: 200px;
 }
 
-.nav-container {
+.nav-container{
   display: flex;
   flex-direction: column;
   flex-basis: 10%;
+}
+
+.nav-container>button {
+  height: 50px;
+  border: none;
+  color: #a6a1ca;
+  background-color: #222029;
+}
+
+.nav-container>button:hover {
+  height: 50px;
+  border: none;
+  background-color: #a6a1ca;
+  color: #222029;
 }
