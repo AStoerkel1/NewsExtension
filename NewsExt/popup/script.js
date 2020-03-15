@@ -9,7 +9,6 @@ $(document).ready(function(){
   })
 });
 
-    
 function getData(sec){
   $.getJSON("https://api.nytimes.com/svc/news/v3/content/nyt/" + sec.toLowerCase() + ".json?api-key=ajba3SMj5gAAjiZG7WjOXdJ3htyjVE1h",
   function(data) {
