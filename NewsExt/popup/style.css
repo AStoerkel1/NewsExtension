@@ -22,23 +22,27 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  background-color: #222029;
+  color: #a6a1ca;
 }
 
 .list-container {
-  color: whitesmoke;
   flex-basis: 90%;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-  color: whitesmoke;
   font-size: 22px;
   width: 100%;
 }
 
 a {
-  color: whitesmoke;
+  background-color: #222029;
+  color: #a6a1ca;
   font-size: 18px;
+  width: 95%;
   text-decoration: none;
   display: block;
 }
