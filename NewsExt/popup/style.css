@@ -1,36 +1,63 @@
-html, body {
-  background-color: rgb(34, 34, 34);
-  width: 400px;
-  max-height: 800px;
-  margin: 5px;
+ 
+ body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #222029;
+  color: #a6a1ca;
+  display: flex;
+  width: 500px;
+  height: 600px;
+}
+
+.list-item {
+  padding: 10px;
+}
+
+.list-item:hover {
+  color: #222029;
+  background-color: #a6a1ca;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .list-container {
   color: whitesmoke;
-  font-family: 'Times New Roman', Times, serif;
-  width: 99%;
+  flex-basis: 90%;
+  flex-grow: 1;
 }
 
 .title {
   color: whitesmoke;
-  font-family: 'Times New Roman', Times, serif;
   font-size: 22px;
   width: 100%;
 }
 
 a {
   color: whitesmoke;
-  font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
+  text-decoration: none;
+  display: block;
 }
 
 a:hover {
   color: rgb(177, 177, 177);
 }
 
-
-
 .NYT_API {
   height: 40px;
   width: 200px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 10%;
 }

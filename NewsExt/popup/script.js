@@ -5,8 +5,10 @@ $(document).ready(function(){
     for(var i =0; i <= 9; i++){
       var title= data.results[i].title;
       var link= data.results[i].url;
+      var photo = (data.results[i].multimedia != null) ? data.results[i].multimedia[0].url : "";
       $("#title" + i).attr("href", link);
       $("#title" + i).text(title);
+      // $("#image" + i).src(photo);
     }
 
   });
