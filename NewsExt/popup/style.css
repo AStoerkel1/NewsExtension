@@ -1,8 +1,7 @@
- 
- body {
+body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,7 +15,6 @@
 .list-item {
   padding: 10px;
 }
-
 
 .flex-container {
   display: flex;
@@ -34,7 +32,7 @@
   flex-direction: column;
 }
 
-.list-container>a {
+.list-container > a {
   box-sizing: border-box;
 }
 
@@ -62,20 +60,20 @@ a:hover {
   width: 200px;
 }
 
-.nav-container{
+.nav-container {
   display: flex;
   flex-direction: column;
   flex-basis: 10%;
 }
 
-.nav-container>button {
+.nav-container > button {
   height: 50px;
   border: none;
   color: #a6a1ca;
   background-color: #222029;
 }
 
-.nav-container>button:hover {
+.nav-container > button:hover {
   height: 50px;
   border: none;
   background-color: #a6a1ca;

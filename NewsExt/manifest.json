@@ -4,7 +4,6 @@
   "name": "NewsExt",
   "version": "1",
 
-
   "browser_action": {
     "browser_style": true,
     "default_popup": "popup/newsExt.html",
