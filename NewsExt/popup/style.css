@@ -17,10 +17,6 @@
   padding: 10px;
 }
 
-.list-item:hover {
-  color: #222029;
-  background-color: #a6a1ca;
-}
 
 .flex-container {
   display: flex;
@@ -48,7 +44,8 @@ a {
 }
 
 a:hover {
-  color: rgb(177, 177, 177);
+  color: #222029;
+  background-color: #a6a1ca;
 }
 
 .NYT_API {
