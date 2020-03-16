@@ -34,18 +34,24 @@ body {
   box-sizing: border-box;
 }
 
+h1 {
+  text-align: center;
+}
+
 .title {
   font-size: 22px;
   width: 100%;
+  border-bottom: 1px solid black;
 }
 
 a {
   background-color: #222029;
   color: #a6a1ca;
   font-size: 18px;
-  width: 95%;
+  width: 100%;
   text-decoration: none;
   display: block;
+  padding: 10px;
 }
 
 a:hover {
@@ -62,6 +68,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   flex-basis: 10%;
+  border-right: 1px solid black;
 }
 
 .nav-container > button {
@@ -69,6 +76,7 @@ a:hover {
   border: none;
   color: #a6a1ca;
   background-color: #222029;
+  font-size: 15px;
 }
 
 .nav-container > button:hover {
