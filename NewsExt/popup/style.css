@@ -27,12 +27,12 @@ body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+}
+
+.item{
   overflow: auto;
 }
 
-.list-container > a {
-  box-sizing: border-box;
-}
 
 h1 {
   text-align: center;
@@ -42,6 +42,7 @@ h1 {
   font-size: 22px;
   width: 100%;
   border-bottom: 1px solid black;
+  height: 100px;
 }
 
 a {
@@ -80,8 +81,6 @@ a:hover {
 }
 
 .nav-container > button:hover {
-  height: 50px;
-  border: none;
   background-color: #a6a1ca;
   color: #222029;
 }
