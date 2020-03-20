@@ -26,7 +26,6 @@ function getData(sec) {
     function(data) {
       console.log(data);
       populate(data, sec);
-      //high coupling here but it works really well :(
     }
   );
 }

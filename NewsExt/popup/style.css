@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #002007;
+  background-color: rgb(20, 34, 30);
   color: #29dd65;
   display: flex;
   max-width: 500px;
@@ -21,7 +21,7 @@ img.logo {
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: #002007;
+  background-color: rgb(20, 34, 30);
   color: #29dd65;
   max-height: 600px;
 }
@@ -33,25 +33,37 @@ img.logo {
   flex-direction: column;
 }
 
-.item{
-  overflow: auto;
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 10%;
 }
 
+.nav-container > button {
+  height: 50px;
+  border: none;
+  color: #29dd65;
+  background-color: rgb(20, 34, 30);
+  font-size: 15px;
+}
 
-h1 {
-  display: inline;
-  text-align: center;
+.nav-container > button:hover {
+  background-color: #29dd65;
+  color: rgb(20, 34, 30);
+}
+
+.item{
+  overflow: auto;
+  flex-basis: 100%;
 }
 
 .title {
   font-size: 22px;
   display: inline;
-  width: 100%;
-  height: 100px;
 }
 
 a {
-  background-color: #002007;
+  background-color: rgb(20, 34, 30);
   color: #29dd65;
   font-size: 18px;
   width: 100%;
@@ -61,7 +73,7 @@ a {
 }
 
 a:hover {
-  color: #002007;
+  color: rgb(20, 34, 30);
   background-color: #29dd65;
 }
 
@@ -70,22 +82,4 @@ a:hover {
   width: 200px;
 }
 
-.nav-container {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 10%;
-  /* border-right: 1px solid black; */
-}
 
-.nav-container > button {
-  height: 50px;
-  border: none;
-  color: #29dd65;
-  background-color: #002007;
-  font-size: 15px;
-}
-
-.nav-container > button:hover {
-  background-color: #29dd65;
-  color: #002007;
-}
