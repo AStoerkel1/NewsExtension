@@ -5,20 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #222029;
-  color: #a6a1ca;
+  background-color: #002007;
+  color: #29dd65;
   display: flex;
   max-width: 500px;
   max-height: 600px;
 }
 
+img.logo {
+  padding: 5px;
+  height: 90px;
+}
 
 .flex-container {
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: #222029;
-  color: #a6a1ca;
+  background-color: #002007;
+  color: #29dd65;
   max-height: 600px;
 }
 
@@ -35,19 +39,20 @@ body {
 
 
 h1 {
+  display: inline;
   text-align: center;
 }
 
 .title {
   font-size: 22px;
+  display: inline;
   width: 100%;
-  /* border-bottom: 1px solid black; */
   height: 100px;
 }
 
 a {
-  background-color: #222029;
-  color: #a6a1ca;
+  background-color: #002007;
+  color: #29dd65;
   font-size: 18px;
   width: 100%;
   text-decoration: none;
@@ -56,8 +61,8 @@ a {
 }
 
 a:hover {
-  color: #222029;
-  background-color: #a6a1ca;
+  color: #002007;
+  background-color: #29dd65;
 }
 
 .NYT_API {
@@ -75,12 +80,12 @@ a:hover {
 .nav-container > button {
   height: 50px;
   border: none;
-  color: #a6a1ca;
-  background-color: #222029;
+  color: #29dd65;
+  background-color: #002007;
   font-size: 15px;
 }
 
 .nav-container > button:hover {
-  background-color: #a6a1ca;
-  color: #222029;
+  background-color: #29dd65;
+  color: #002007;
 }
