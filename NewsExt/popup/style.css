@@ -39,6 +39,10 @@ img.logo {
   flex-basis: 10%;
 }
 
+.nav-container > img {
+  height: 70px;
+}
+
 .nav-container > button {
   height: 50px;
   border: none;
@@ -59,12 +63,11 @@ img.logo {
 
 .title {
   font-size: 22px;
-  display: inline;
 }
 
 a {
-  background-color: rgb(20, 34, 30);
-  color: #29dd65;
+  background-color: white;
+  color: rgb(20, 34, 30);
   font-size: 18px;
   width: 100%;
   text-decoration: none;
