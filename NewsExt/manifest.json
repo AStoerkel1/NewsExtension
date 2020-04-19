@@ -10,5 +10,10 @@
     "default_icon": {
       "32": "icons/LogoMakr_0y9WrJ.png"
     }
-  }
+  },
+
+  "permissions": [
+    "webRequest"
+  ]
+
 }
