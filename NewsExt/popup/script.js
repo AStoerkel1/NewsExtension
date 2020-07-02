@@ -1,13 +1,13 @@
 /* wait until the document is ready */
-$(document).ready(function() {
+$(document).ready(function () {
   /* then get data from the API */
   getData("U.S.");
   /**
    * when a button is clicked,
    * get the class name and put that into the API URL
    */
-  $("button").click(function() {
-    $(this).attr("class", function(n, id) {
+  $("button").click(function () {
+    $(this).attr("class", function (n, id) {
       getData(id);
     });
   });
@@ -21,7 +21,7 @@ $(document).ready(function() {
 function getData(sec) {
   $.getJSON(
     `https://api.nytimes.com/svc/news/v3/content/nyt/${sec.toLowerCase()}.json?api-key=ajba3SMj5gAAjiZG7WjOXdJ3htyjVE1h`,
-    function(data) {
+    function (data) {
       console.log(data);
       populate(data, sec);
     }
