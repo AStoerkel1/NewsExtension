@@ -39,7 +39,7 @@ function populate(data, sec) {
     var photo =
       data.results[i].multimedia != null
         ? data.results[i].multimedia[0].url
-        : "";
+        : "LogoMakr_5kNAVC.png";
     $("#link" + i).attr("href", link);
     $("#title" + i).text(title);
     $("#image" + i).attr("src", photo);
