@@ -8,7 +8,7 @@ body {
   background-color: rgb(20, 34, 30);
   color: #29dd65;
   display: flex;
-  max-width: 500px;
+  width: 500px;
   max-height: 600px;
 }
 
@@ -20,7 +20,7 @@ img.logo {
 .flex-container {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 99%;
   background-color: rgb(20, 34, 30);
   color: #29dd65;
   max-height: 600px;
@@ -44,15 +44,16 @@ img.logo {
   height: 70px;
 }
 
-.nav-container > button {
-  height: 50px;
-  border: none;
+.nav-container > a {
+  height: 35px;
   color: #29dd65;
   background-color: rgb(20, 34, 30);
   font-size: 15px;
+  text-decoration: none;
+  padding: 10px;
 }
 
-.nav-container > button:hover {
+.nav-container > a:hover {
   background-color: #29dd65;
   color: rgb(20, 34, 30);
 }
@@ -60,19 +61,17 @@ img.logo {
 .list{
   overflow: auto;
   flex-basis: 100%;
-  /* background-image: url(LogoMakr_0y9WrJ.png);
-  background-repeat: no-repeat; */
 }
 
 .title {
   font-size: 22px;
 }
 
-a {
+.list > a {
   background-color: #29dd65;
   color: rgb(20, 34, 30);
   font-size: 18px;
-  width: 90%;
+  width: 85%;
   text-decoration: none;
   display: block;
   padding: 10px;
@@ -82,7 +81,7 @@ a {
 
 a:hover {
   /* background-color: #29dd65; */
-  scale: 1.05;
+  transform: scale(1.05, 1.05);
 }
 
 a > img {

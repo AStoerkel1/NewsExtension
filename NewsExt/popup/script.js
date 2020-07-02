@@ -6,7 +6,7 @@ $(document).ready(function () {
    * when a button is clicked,
    * get the class name and put that into the API URL
    */
-  $("button").click(function () {
+  $("a").click(function () {
     $(this).attr("class", function (n, id) {
       getData(id);
     });
