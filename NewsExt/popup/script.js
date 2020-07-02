@@ -1,13 +1,14 @@
 /* wait until the document is ready */
+var sec = "U.S.";
 $(document).ready(function () {
   /* then get data from the API */
-  getData("U.S.");
+  getData(sec);
   /**
    * when a button is clicked,
    * get the class name and put that into the API URL
    */
-  $("a").click(function () {
-    $(this).attr("class", function (n, id) {
+  $(".nav-button").click(function () {
+    $(this).attr("id", function (n, id) {
       getData(id);
     });
   });
