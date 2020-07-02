@@ -60,6 +60,8 @@ img.logo {
 .item{
   overflow: auto;
   flex-basis: 100%;
+  background-image: url(LogoMakr_0y9WrJ.png);
+  background-repeat: no-repeat;
 }
 
 .title {
