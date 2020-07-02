@@ -36,13 +36,12 @@ function populate(data, sec) {
   for (var i = 0; i <= 9; i++) {
     var title = data.results[i].title;
     var link = data.results[i].url;
-    var photo =
-      data.results[i].multimedia != null
-        ? data.results[i].multimedia[0].url
-        : "LogoMakr_5kNAVC.png";
+    var photo = data.results[i].multimedia != null ? data.results[i].multimedia[0].url : "LogoMakr_5kNAVC.png";
+    var cap = data.results[i].multimedia != null ? data.results[i].multimedia[0].caption : "No Image";
     $("#link" + i).attr("href", link);
     $("#title" + i).text(title);
-    $("#image" + i).attr("src", photo);
+    $("#image" + i).attr("src", photo).attr("alt", cap);
+    // $("#image" + i).attr("alt", cap);
     $("h1").text(sec);
   }
 }
