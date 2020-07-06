@@ -19,12 +19,12 @@ $(document).ready(function () {
  * log it on the console and
  * send that data to the page
  */
-function getData(sec) {
+function getData(section) {
   $.getJSON(
-    `https://api.nytimes.com/svc/news/v3/content/nyt/${sec.toLowerCase()}.json?api-key=ajba3SMj5gAAjiZG7WjOXdJ3htyjVE1h`,
+    `https://api.nytimes.com/svc/news/v3/content/nyt/${section.toLowerCase()}.json?api-key=ajba3SMj5gAAjiZG7WjOXdJ3htyjVE1h`,
     function (data) {
       console.log(data);
-      populate(data, sec);
+      populate(data, section);
     }
   );
 }
