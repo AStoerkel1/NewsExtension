@@ -1,5 +1,5 @@
 let sec = "U.S.";
-
+let data = {};
 /* wait until the document is ready */
 $(document).ready(function () {
   /* then get data from the API */
@@ -23,10 +23,10 @@ $(document).ready(function () {
 function getData(section) {
   $.getJSON(
     `https://api.nytimes.com/svc/news/v3/content/nyt/${section.toLowerCase()}.json?api-key=ajba3SMj5gAAjiZG7WjOXdJ3htyjVE1h`,
-    function (data) {
-      console.log(data);
-
-      populate(data, section);
+    function (response) {
+      console.log(response);
+      data = response;
+      populate(response, section);
     }
   );
 }
