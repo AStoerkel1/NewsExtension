@@ -1,4 +1,5 @@
-var sec = "U.S.";
+let sec = "U.S.";
+
 /* wait until the document is ready */
 $(document).ready(function () {
   /* then get data from the API */
@@ -24,6 +25,7 @@ function getData(section) {
     `https://api.nytimes.com/svc/news/v3/content/nyt/${section.toLowerCase()}.json?api-key=ajba3SMj5gAAjiZG7WjOXdJ3htyjVE1h`,
     function (data) {
       console.log(data);
+
       populate(data, section);
     }
   );
@@ -34,11 +36,11 @@ function getData(section) {
  * from the API
  */
 function populate(data, sec) {
-  for (var i = 0; i <= 9; i++) {
-    var title = data.results[i].title;
-    var link = data.results[i].url;
-    var photo = data.results[i].multimedia != null ? data.results[i].multimedia[0].url : "LogoMakr_5kNAVC.png";
-    var cap = data.results[i].multimedia != null ? data.results[i].multimedia[0].caption : "No Image";
+  for (let i = 0; i <= 9; i++) {
+    let title = data.results[i].title;
+    let link = data.results[i].url;
+    let photo = data.results[i].multimedia != null ? data.results[i].multimedia[0].url : "LogoMakr_5kNAVC.png";
+    let cap = data.results[i].multimedia != null ? data.results[i].multimedia[0].caption : "No Image";
     $("#link" + i).attr("href", link);
     $("#title" + i).text(title);
     $("#image" + i).attr("src", photo).attr("alt", cap);
