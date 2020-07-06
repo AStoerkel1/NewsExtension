@@ -1,5 +1,5 @@
-/* wait until the document is ready */
 var sec = "U.S.";
+/* wait until the document is ready */
 $(document).ready(function () {
   /* then get data from the API */
   getData(sec);
@@ -42,7 +42,6 @@ function populate(data, sec) {
     $("#link" + i).attr("href", link);
     $("#title" + i).text(title);
     $("#image" + i).attr("src", photo).attr("alt", cap);
-    // $("#image" + i).attr("alt", cap);
     $("h1").text(sec);
   }
 }
