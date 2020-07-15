@@ -65,6 +65,10 @@ img.logo {
   flex-basis: 100%;
 }
 
+.list::-webkit-scrollbar {
+  display: none;
+}
+
 .title {
   font-size: 22px;
 }
@@ -78,7 +82,7 @@ img.logo {
   display: block;
   padding: 10px;
   border-radius: 10px;
-  margin: 20px;
+  margin: 20px auto;
 }
 
 a:hover {
