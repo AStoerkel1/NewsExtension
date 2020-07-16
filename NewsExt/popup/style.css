@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(20, 34, 30);
+  background-color: black;
   color: #29dd65;
   display: flex;
   width: 500px;
@@ -21,8 +21,8 @@ img.logo {
   display: flex;
   flex-direction: row;
   width: 99%;
-  background-color: rgb(20, 34, 30);
-  color: #29dd65;
+  background-color: inherit;
+  color: inherit;
   max-height: 600px;
 }
 
@@ -45,8 +45,8 @@ img.logo {
 }
 
 .nav-button {
-  color: #29dd65;
-  background-color: rgb(20, 34, 30);
+  color: inherit;
+  background-color: inherit;
   font-size: 15px;
   text-decoration: none;
   padding: 5px;
