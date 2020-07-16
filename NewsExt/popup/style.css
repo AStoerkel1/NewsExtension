@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
-  color: #29dd65;
+  color: white;
   display: flex;
   width: 500px;
   max-height: 600px;
@@ -15,6 +15,7 @@ body {
 img.logo {
   padding: 5px;
   height: 90px;
+  padding-top: 20px;
 }
 
 .flex-container {
@@ -39,10 +40,7 @@ img.logo {
   flex-basis: 10%;
 }
 
-.nav-container > img {
-  padding-top: 20px;
-  height: 70px;
-}
+
 
 .nav-button {
   color: inherit;
@@ -51,15 +49,12 @@ img.logo {
   text-decoration: none;
   padding: 5px;
   margin: 5px;
-  border-radius: 10px;
-  border: 2px solid  black;
 }
 
 .nav-button:hover {
-  border: 2px solid #29dd65;
   cursor: pointer;
-  color: black;
-  background-color: #29dd65;
+  color: #29dd65;
+  background-color: inherit;
   font-weight: bold;
 }
 
@@ -77,11 +72,12 @@ img.logo {
 }
 
 .list > a {
-  background-color: #29dd65;
-  color: black;
+  background-color: inherit;
+  color: inherit;
   font-size: 18px;
   width: 85%;
   text-decoration: none;
+  border: 1px solid;
   display: block;
   padding: 10px;
   border-radius: 10px;
@@ -90,6 +86,8 @@ img.logo {
 
 a:hover {
   transform: scale(1.05, 1.05);
+  border: 1px solid ;
+  color: #29dd65;
 }
 
 a > img {
