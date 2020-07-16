@@ -52,12 +52,15 @@ img.logo {
   padding: 5px;
   margin: 5px;
   border-radius: 10px;
-  border: 2px solid  rgb(20, 34, 30);
+  border: 2px solid  black;
 }
 
 .nav-button:hover {
   border: 2px solid #29dd65;
   cursor: pointer;
+  color: black;
+  background-color: #29dd65;
+  font-weight: bold;
 }
 
 .list{
@@ -75,7 +78,7 @@ img.logo {
 
 .list > a {
   background-color: #29dd65;
-  color: rgb(20, 34, 30);
+  color: black;
   font-size: 18px;
   width: 85%;
   text-decoration: none;
