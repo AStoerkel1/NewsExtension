@@ -10,20 +10,17 @@ $(document).ready(function () {
 });
 
 function getData() {
-    var myHeader = new Headers();
-    var url = 'http://newsapi.org/v2/top-headlines?country=us&apiKey=15430381f4634aa69e23e74c9597996e';
+    var url = 'http://newsapi.org/v2/top-headlines?' +
+        'country=us&' +
+        'apiKey=15430381f4634aa69e23e74c9597996e';
     fetch(url, {
         method: "GET",
-        mode: "no-cors",
-        headers: myHeader,
-        cache: 'default',
+        headers: 'Access-Control-Allow-Origin',
     })
-        .then(res => res.text())
+        .then(res => res.json())
         .then((data) => {
-            data ? JSON.parse(data) : {};
-        }).then(json => {
-            console.log(json);
-            populate(json);
+            console.log(data);
+            populate(data);
         })
         .catch(e => console.log(e));
 }
