@@ -58,6 +58,11 @@ img.logo {
   font-weight: bold;
 }
 
+.title {
+  font-size: 22px;
+  color: #29dd65;
+}
+
 .list{
   overflow: auto;
   flex-basis: 100%;
@@ -67,17 +72,13 @@ img.logo {
   display: none;
 }
 
-.title {
-  font-size: 22px;
-}
-
 .list > a {
   background-color: inherit;
   color: inherit;
   font-size: 18px;
   width: 85%;
   text-decoration: none;
-  border: 1px solid;
+  border: 1px solid #29dd65;
   display: block;
   padding: 10px;
   border-radius: 10px;
