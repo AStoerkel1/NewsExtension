@@ -21,14 +21,13 @@ $(document).ready(function () {
  * send that data to the page
  */
 function getData(section) {
-  $.getJSON(
-    `https://api.nytimes.com/svc/news/v3/content/nyt/${section.toLowerCase()}.json?api-key=ajba3SMj5gAAjiZG7WjOXdJ3htyjVE1h`,
-    function (response) {
-      console.log(response);
-      data = response;
-      populate(response, section);
-    }
-  );
+
+  fetch(`https://api.nytimes.com/svc/news/v3/content/nyt/${section.toLowerCase()}.json?api-key=ajba3SMj5gAAjiZG7WjOXdJ3htyjVE1h`)
+    .then(response => response.json())
+    .then((data) => {
+      console.log(data);
+      populate(data, section);
+    });
 }
 
 /**
