@@ -15,7 +15,9 @@ function getData() {
         'apiKey=15430381f4634aa69e23e74c9597996e';
     fetch(url, {
         method: "GET",
-        headers: 'Access-Control-Allow-Origin',
+        headers: {
+            'Access-control-Allow-Origin': '*'
+        },
     })
         .then(res => res.json())
         .then((data) => {
