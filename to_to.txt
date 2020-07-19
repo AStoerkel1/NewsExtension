@@ -1,0 +1,11 @@
+Future Hedlyns changes:
+
+Backend: 
+	-change the API to the newsAPI.org (   API Key  -  15430381f4634aa69e23e74c9597996e   ) this may not be the right choice check to see how you might sort into sections
+
+	-change the populate method to insert html based on whether the user presses "show more" link. So, rather than having links in the html file, you should have a single div that will contain the elements inserted by document.getElementById('').innerHTML = <a class = "" ></a>...
+
+problems: 
+	-Research headers. sending 'Access-Control-Allow-Origin' is on the right track but we may need to send a fetch with this first before we are able to send a cross origin request. ( you may want to set up a test where you test different requests in chrome before you really start messing with program code.
+
+	
