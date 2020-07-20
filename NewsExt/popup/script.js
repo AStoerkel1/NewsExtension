@@ -37,7 +37,7 @@ function populate(data, sec) {
   for (let i = 0; i <= 9; i++) {
     let title = data.results[i].title;
     let link = data.results[i].url;
-    let photo = data.results[i].multimedia != null ? data.results[i].multimedia[0].url : "LogoMakr_5kNAVC.png";
+    let photo = data.results[i].multimedia != null ? data.results[i].multimedia[0].url : "LogoMakr_0CK1A3.png";
     let cap = data.results[i].multimedia != null ? data.results[i].multimedia[0].caption : "No Image";
     $("#link" + i).attr("href", link);
     $("#title" + i).text(title);
